@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>HUA.kml</name>
+	<open>1</open>
+	<Folder>
+		<name>Harokopio University of Athens</name>
+		<open>1</open>
+		<LookAt>
+			<longitude>23.70824758819832</longitude>
+			<latitude>37.96096628151464</latitude>
+			<altitude>0</altitude>
+			<range>192.2089882256726</range>
+			<tilt>47.6770540588911</tilt>
+			<heading>-11.65093403216848</heading>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<Placemark>
+			<name>Harokopio University</name>
+			<description><![CDATA[<h2>Harokopio University of Athens</h2>
+				<img src="http://gaia.gge.unb.ca/wmaps/LABS/2/KML/photos/central_building.jpg" width="230" height="172"><br>
+				<a href="http://www.hua.gr">http://www.hua.gr</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>23.7082,37.961285,15</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Geography Building</name>
+			<Polygon id="khPolygon784">
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<outerBoundaryIs>
+					<LinearRing id="khLinearRing775">
+						<coordinates>
+							23.70778,37.960829,8 23.707968,37.960656,8 
+							23.708116,37.960756,8 23.708143,37.960732,8 
+							23.708257,37.960808,8 23.70815,37.960902,8 
+							23.70807,37.960846,8 23.708021,37.960885,8 
+							23.708049,37.960902,8 23.708058,37.960969,8 
+							23.70803,37.960968,8 23.708013,37.960982,8 
+							23.70778,37.960829,8 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Path</name>
+			<LineString>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					23.708039,37.96087,0 23.708154,37.96095,0 
+					23.708345,37.960773,0 23.708589,37.960938,0 
+					23.708665,37.960871,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Fence</name>
+			<LineString>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>
+					23.708623,37.960863,3 23.707885,37.960356,3 
+					23.707063,37.961114,3 23.708572,37.96215,3 
+					23.709384,37.961379,3 23.708681,37.960895,3 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Folder>
+			<name>Central Building</name>
+			<open>1</open>
+			<Placemark>
+				<name>Central Building</name>
+				<Polygon id="khPolygon784">
+					<extrude>1</extrude>
+					<altitudeMode>relativeToGround</altitudeMode>
+					<outerBoundaryIs>
+						<LinearRing id="khLinearRing775">
+							<coordinates>
+								23.708108,37.961083,10 23.708449,37.961307,10 
+								23.708318,37.961429,10 23.707978,37.961203,10 
+								23.708108,37.961083,10 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Folder>
+				<name>Roof</name>
+				<open>1</open>
+				<Placemark>
+					<name>Trapezoid 1</name>
+					<Polygon id="khPolygon784">
+						<altitudeMode>relativeToGround</altitudeMode>
+						<outerBoundaryIs>
+							<LinearRing id="khLinearRing785">
+								<coordinates>
+									23.708318,37.961429,10 23.708307,37.961338,14 
+									23.708095,37.961195,14 23.707978,37.961203,10 
+									23.708318,37.961429,10  
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>Trapezoid 2</name>
+					<Polygon id="khPolygon784">
+						<altitudeMode>relativeToGround</altitudeMode>
+						<outerBoundaryIs>
+							<LinearRing id="khLinearRing785">
+								<coordinates>
+									23.708108,37.961083,10 23.708449,37.961307,10
+									23.708307,37.961338,14 23.708095,37.961195,14
+									23.708108,37.961083,10
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>Triangle 1</name>
+					<Polygon id="khPolygon784">
+						<altitudeMode>relativeToGround</altitudeMode>
+						<outerBoundaryIs>
+							<LinearRing id="khLinearRing785">
+								<coordinates>
+									23.708108,37.961083,10 23.707978,37.961203,10 
+									23.708095,37.961195,14 23.708108,37.961083,10
+ 								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>Triangle 2</name>
+					<Polygon id="khPolygon784">
+						<altitudeMode>relativeToGround</altitudeMode>
+						<outerBoundaryIs>
+							<LinearRing id="khLinearRing785">
+								<coordinates>
+								23.708449,37.961307,10 23.708318,37.961429,10 
+								23.708307,37.961338,14 23.708449,37.961307,10  
+ 								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Movement along the path</name>
+			<open>1</open>
+			<Style id="man_img">
+				<IconStyle>	
+					<color>ff00ff00</color>
+					<scale>1.2</scale>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+					</Icon>
+				</IconStyle>
+			</Style>
+			<Placemark>
+				<TimeSpan>
+  					<begin>2009-01-01T07:59:30Z</begin>  
+  					<end>2009-01-01T08:00:00Z</end>    
+				</TimeSpan>
+				<styleUrl>#man_img</styleUrl>
+	      			<Point><coordinates>23.708665,37.960871,0</coordinates></Point>
+  			</Placemark>	
+			<Placemark>
+				<TimeStamp>
+					<when>2009-01-01T08:00:10Z</when>
+				</TimeStamp>
+				<styleUrl>#man_img</styleUrl>
+	      			<Point><coordinates>23.708589,37.960938,0</coordinates></Point>
+  			</Placemark>
+			<Placemark>
+				<TimeStamp>
+					<when>2009-01-01T08:00:20Z</when>
+				</TimeStamp>
+				<styleUrl>#man_img</styleUrl>
+	      			<Point><coordinates>23.708345,37.960773,0</coordinates></Point>
+  			</Placemark>
+			<Placemark>
+				<TimeStamp>
+					<when>2009-01-01T08:00:30Z</when>
+				</TimeStamp>
+				<styleUrl>#man_img</styleUrl>
+	      			<Point><coordinates>23.708154,37.96095,0</coordinates></Point>
+  			</Placemark>
+			<Placemark>
+				<TimeSpan>
+  					<begin>2009-01-01T08:00:40Z</begin>  
+  					<end>2009-01-01T08:01:10Z</end>    
+				</TimeSpan>
+				<styleUrl>#man_img</styleUrl>
+	      			<Point><coordinates>23.708039,37.96087,0</coordinates></Point>
+  			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

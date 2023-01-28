@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>Assignment_2b.kml</name>
+	<open>1</open>
+	<Folder>
+		<name>Gloucester</name>
+		<open>1</open>
+		<LookAt>
+			<longitude>-65.103699</longitude>
+			<latitude>47.7113165</latitude>
+			<altitude>0</altitude>
+			<range>180,274.1545</range>
+			<tilt>47.6770540588911</tilt>
+			<heading>-11.65093403216848</heading>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<Placemark>
+			<name>Bathurst City</name>
+			<color>a8d221</color>
+			<description><![CDATA[<h2>Bathurst City</h2>
+				<a href="https://goo.gl/maps/8otVu88zXGfkpxut5">View on Google Map</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>47.6259605,-65.6281926,31</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Beresford Town</name>
+			<color>bb9b4c</color>
+			<description><![CDATA[<h2>Beresford Town</h2>
+				<a href="ttps://goo.gl/maps/7QUWPKwYC9SxHTds5">View on Google Map</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>47.711099,-65.6962308,15</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Shippagan Town</name>
+			<color>fc813b</color>
+			<description><![CDATA[<h2>Shippagan Town</h2>
+				<a href="https://goo.gl/maps/57wHV4HD9vqTTpQS9">View on Google Map</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>47.7397131,-64.7229565,7</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Petit-Rocher Village</name>
+			<color>8d16b0</color>
+			<description><![CDATA[<h2>Petit-Rocher Village</h2>
+				<a href="https://goo.gl/maps/h7Dmft5zvgLpuxCr5">View on Google Map</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>47.7846505,-65.7231544,7</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Belledune Village</name>
+			<color>38166e</color>
+			<description><![CDATA[<h2>Belledune Village</h2>
+				<a href="https://goo.gl/maps/hM6VGMMANknHpEnp6">View on Google Map</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>47.9148845,-65.9277631,62</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bas-Caraquet Village</name>
+			<color>0e63d1</color>
+			<description><![CDATA[<h2>Bas-Caraquet Village</h2>
+				<a href="https://goo.gl/maps/RwaZXX3dTRFtwM1H6">View on Google Map</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>47.7831535,-64.8310934,15</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lameque Village</name>
+			<color>626c61</color>
+			<description><![CDATA[<h2>Lameque Village</h2>
+				<a href="https://goo.gl/maps/noiaXMFMD7XHDeyf7">View on Google Map</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>47.8109164,-64.6236565,15</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Saint-Leolin Village</name>
+			<color>00FFFF</color>
+			<description><![CDATA[<h2>Saint-Leolin Village</h2>
+				<a href="https://goo.gl/maps/d8GXbARfcNEDwPqUA">View on Google Map</a>]]></description>
+			<Point>
+				<extrude>1</extrude>
+				<coordinates>47.7687332,-65.1794509,7</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

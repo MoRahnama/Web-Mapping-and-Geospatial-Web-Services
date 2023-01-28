@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Quick Start - Leaflet</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- Load Esri Leaflet from CDN -->
+        <script src="https://unpkg.com/esri-leaflet@2.0.4"></script>
+</head>
+<body>
+
+<h1>LeafLet - Layers - Two basemaps (OSM/Esri)</h1>
+
+<! defive the size of the map (div) ->
+<div id="mapid" style="width: 600px; height: 400px;"></div>
+<script>
+
+    // marker set 1
+	var pts1 = new L.LayerGroup();
+	
+	// add a marker
+	L.marker([45.95, -66.67]).addTo(pts1);
+	L.marker([45.96, -66.66]).addTo(pts1);
+
+    // marker set 2
+	var pts2 = new L.LayerGroup();
+	
+	// add a marker
+	L.marker([45.94, -66.66]).addTo(pts2);
+	L.marker([45.93, -66.65]).addTo(pts2);
+	
+	// define osm layer 
+	var osmmap = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	});
+	
+	// define esri layer
+	var esrimap = L.esri.basemapLayer("Topographic");
+		
+	var mymap = L.map('mapid', {
+		center: [45.95, -66.67],
+		zoom: 13,
+		layers: [osmmap, esrimap]
+	});
+
+	var baseLayers = {
+		"OSM": osmmap,
+		"ESRI": esrimap
+	};
+
+	var overlays = {
+		"Markers 1": pts1,
+		"Markers 2": pts2,
+	};
+
+	L.control.layers(baseLayers, overlays).addTo(mymap);
+	
+</script>
+
+</body>
+</html>

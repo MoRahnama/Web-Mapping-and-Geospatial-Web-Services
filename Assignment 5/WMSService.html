@@ -1,0 +1,188 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+  <title> WMS Requests-Sample</title>
+  <!-- add header for the tab, as well as repeating image along top of page -->
+  <!-- changes to default text and colors -->
+  <style type= "text/css">
+body
+  {
+  background:rgb(230,238,255);
+}
+
+	</style>
+</head>
+ 
+ <body >
+ 
+<!--HTML body section -->
+<body>
+<!add logo for UNB>
+<img src="./img/UNB.jpg" width="75" height="75" alt="UNB">
+<!add logo for GGE>
+<img src="./img/GGE_LogoHome.gif" width="115" height="82" alt="GGE">
+<p>University of New Brunswick<br>
+DEPARTMENT OF GEODESY AND GEOMATICS ENGINEERING </p>
+<hr>
+<!-- add title -->
+<br>
+<h2> WMS service query</h2>
+<h3> Sample: LAB 6</h3>
+
+
+<!-- description of the content -->
+<p>
+The page provides access to the data (shapefiles) via a WMS service using an associated MAP file.
+<br><br>
+<em>
+		<a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?
+map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&
+VERSION=1.3.0&
+REQUEST=GetCapabilities" target="_blank">What can this service do?</a> 
+	</em>
+	<br><br>
+	<!-- add table, headers and links to wms querys -->
+<table border="5" width="80%">
+ 
+<th width="30%"> Point features </th>
+<!-- add image showing preview of all the content-->
+  <td rowspan="11"> 
+  	<p style="text-align:center;">
+		<img src="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=BusStops,Parks,Grocery,Bars,trails,street,LandParcels&BBOX=-66.8023,45.8874,-66.5402,46.0275&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png">
+	</p>
+  </td>
+  
+  <tr>
+<td> <em>
+  <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&VERSION=1.1.1&
+REQUEST=GetMap&
+LAYERS=BusStops&
+BBOX=-66.8023,45.8874,-66.5402,46.0275&
+STYLES=&SRS=EPSG:4326&
+WIDTH=700&HEIGHT=600&
+FORMAT=image/png" target="_blank">Bus Stops</a> 
+</em>
+  </td>
+  </tr>
+  <tr>
+<td> <em>
+  <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&VERSION=1.1.1&
+REQUEST=GetMap&
+LAYERS=Grocery&
+BBOX=-66.8023,45.8874,-66.5402,46.0275&
+STYLES=&SRS=EPSG:4326&
+WIDTH=700&HEIGHT=600&
+FORMAT=image/png" target="_blank">Grocery Stores</a> 
+</em>
+  </td>
+  </tr>
+  <tr>
+<td> <em>
+  <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&VERSION=1.1.1&
+REQUEST=GetMap&
+LAYERS=Bars&
+BBOX=-66.8023,45.8874,-66.5402,46.0275&
+STYLES=&SRS=EPSG:4326&
+WIDTH=700&HEIGHT=600&
+FORMAT=image/png" target="_blank">Bars/Restaurants</a> 
+</em>
+  </td>
+  </tr>
+  
+ <th> Line Features  </th>
+
+<tr>
+<td> <em>
+  <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&VERSION=1.1.1&
+REQUEST=GetMap&
+LAYERS=street&
+BBOX=-66.8023,45.8874,-66.5402,46.0275&
+STYLES=&SRS=EPSG:4326&
+WIDTH=700&HEIGHT=600&
+FORMAT=image/png" target="_blank">Roads</a> 
+</em>
+  </td>
+  </tr>
+  
+  <tr>
+<td> <em>
+  <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&VERSION=1.1.1&
+REQUEST=GetMap&
+LAYERS=trails&
+BBOX=-66.8023,45.8874,-66.5402,46.0275&
+STYLES=&SRS=EPSG:4326&
+WIDTH=700&HEIGHT=600&
+FORMAT=image/png" target="_blank">Trails</a> 
+</em>
+  </td>
+  </tr>
+  
+ 
+
+<th> Polygon Features </th>
+ <tr>
+<td> <em>
+  <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&VERSION=1.1.1&
+REQUEST=GetMap&
+LAYERS=Parks&
+BBOX=-66.8023,45.8874,-66.5402,46.0275&
+STYLES=&SRS=EPSG:4326&
+WIDTH=700&HEIGHT=600&
+FORMAT=image/png" target="_blank">Parks</a> 
+</em>
+  </td></tr>
+  <tr>
+  <td> <em>
+  <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&VERSION=1.1.1&
+REQUEST=GetMap&
+LAYERS=LandParcels&
+BBOX=-66.8023,45.8874,-66.5402,46.0275&
+STYLES=&SRS=EPSG:4326&
+WIDTH=700&HEIGHT=600&
+FORMAT=image/png" target="_blank">Land Parcels</a> 
+</em>
+  </td>
+  
+  </tr>  
+ <th>
+ 
+  	<h3>
+   <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&
+SERVICE=WMS&VERSION=1.1.1&
+REQUEST=GetMap&
+LAYERS=LandParcels,BusStops,Parks,Grocery,Bars,trails,street&
+BBOX=-66.8023,45.8874,-66.5402,46.0275&
+STYLES=&SRS=EPSG:4326&
+WIDTH=700&HEIGHT=600&
+FORMAT=image/png" target="_blank">Select All</a>
+	</h3>
+  </th>
+    </tr>
+
+  </table>
+
+<br>
+<br>
+ <h4>WMS query examples:</h4>
+<h3> BusStops Layer:</h3>
+  <p>
+http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=BusStops,Parks,Grocery,Bars,trails,street&BBOX=-66.8023,45.8874,-66.5402,46.0275&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png </p> <br>
+  <h3>  Parks Layer: </h3>
+  <p>
+http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=Parks&BBOX=-66.8023,45.8874,-66.5402,46.0275&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png  
+</p>  
+  
+  </body>
+</html>
+
+
+
+			

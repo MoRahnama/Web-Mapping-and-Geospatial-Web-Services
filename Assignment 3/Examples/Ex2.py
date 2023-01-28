@@ -1,0 +1,21 @@
+MATRIX A
+[[1 1]
+ [0 1]]
+MATRIX B
+[[2 0]
+ [3 4]]
+MARTIX A+B
+[[3 1]
+ [3 5]]
+MATRIX A-B
+[[-1  1]
+ [-3 -3]]
+MATRIX A*B
+[[2 0]
+ [0 4]]
+MATRIX AxB
+[[5 4]
+ [3 4]]
+MATRIX AxB
+[[5 4]
+ [3 4]]

@@ -1,0 +1,226 @@
+MAP
+
+NAME Fredericton_wms		
+STATUS ON
+SIZE 1000 600
+EXTENT -66.8023 45.8874 -66.5402 46.0275
+UNITS DD
+IMAGECOLOR 250 250 250
+
+PROJECTION
+	"init=epsg:4326"
+END
+
+WEB
+	IMAGEPATH "C:\ms4w\Apache\htdocs\tmp"
+	IMAGEURL "/tmp/"
+	METADATA 
+		"wms_title" "WMS Server (test)"
+		"wms_onlineresource" "http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Fredericton_wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
+		"wms_srs" "EPSG:4326 EPSG:3857" 
+		"ows_enable_request" "*"
+		END
+END
+
+
+#-------- 
+   LAYER
+    NAME "Parks"
+    TYPE POLYGON
+
+    DATA 'C:/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Parks.shp'
+   METADATA
+      'wms_title' 'Parks'
+    END
+    STATUS ON
+    TRANSPARENCY 80
+    PROJECTION
+    	'init=epsg:4326'
+    END
+  CLASS
+       NAME 'Parks' 
+       STYLE
+         SYMBOL 0 
+         SIZE 2 
+         OUTLINECOLOR 0 0 0
+         COLOR 0 175 75
+       END
+    END
+  END  
+  
+  #-------- 
+   LAYER
+    NAME "LandParcels"
+    TYPE POLYGON
+
+    DATA 'C:/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/YORKCOUNTY.shp'
+   METADATA
+      'wms_title' 'LandParcels'
+    END
+    STATUS ON
+    TRANSPARENCY 80
+    PROJECTION
+    	'init=epsg:4326'
+    END
+  CLASS
+       NAME 'Parcels' 
+       STYLE
+         SYMBOL 0 
+         SIZE 1 
+         OUTLINECOLOR 192 192 192
+       END
+    END
+  END  
+  
+  
+#-------- 
+   LAYER
+    NAME "trails"
+    TYPE LINE
+
+    DATA 'C:/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/trails.shp'
+    METADATA
+      'wms_title' 'Trails'
+    END
+    STATUS ON
+    PROJECTION
+    	'init=epsg:4326'
+    END
+  CLASS
+       NAME 'Trails' 
+       STYLE
+         SYMBOL 0 
+         SIZE 3 
+         COLOR 139 0 139
+       END
+    END
+  END
+  
+  #-------- 
+   LAYER
+    NAME "street"
+    TYPE LINE
+
+    DATA 'C:/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/street.shp'
+    METADATA
+      'wms_title' 'Street Centerline'
+    END
+    STATUS ON
+    PROJECTION
+    	'init=epsg:4326'
+    END
+  CLASS
+       NAME 'Trails' 
+       STYLE
+         SYMBOL 0 
+         SIZE 3 
+        COLOR 146 146 146
+       END
+    END
+  END
+  
+  #-------
+   LAYER
+    NAME "Bars"
+   TYPE POINT
+
+    DATA 'C:/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Bars.shp'
+    METADATA
+      'wms_title' 'Bars'
+    END
+    STATUS ON
+    PROJECTION
+    	'init=epsg:4326'
+    END
+ CLASS
+       NAME 'Bars' 
+      STYLE
+         SYMBOL 'CIRCLE' 
+         SIZE 10 
+         OUTLINECOLOR 0 0 0
+         COLOR 85 187 102
+       END
+    END
+  END 
+  
+    #Circle symbol
+      SYMBOL
+        NAME 'CIRCLE'
+        TYPE ellipse
+        FILLED true
+        POINTS
+          1 1
+        END
+      END    
+
+   #-------
+   LAYER
+    NAME "Grocery"
+   TYPE POINT
+
+    DATA 'C:/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/Grocery.shp'
+    METADATA
+      'wms_title' 'Grocery'
+    END
+    STATUS ON
+    PROJECTION
+    	'init=epsg:4326'
+    END
+ CLASS
+       NAME 'Bars' 
+      STYLE
+         SYMBOL 'CIRCLE' 
+         SIZE 10 
+         OUTLINECOLOR 255 170 0
+         COLOR 255 170 0
+       END
+    END
+  END 
+  
+    #Circle symbol
+      SYMBOL
+        NAME 'CIRCLE'
+        TYPE ellipse
+        FILLED true
+        POINTS
+          1 1
+        END
+      END  
+  
+    #-------
+   LAYER
+    NAME "BusStops"
+   TYPE POINT
+
+    DATA 'C:/ms4w/Apache/htdocs/wmaps/LABS/6/Fredericton/BusStops.shp'
+    METADATA
+      'wms_title' 'Bus Stops'
+      "ows_enable_request" "*"
+    END
+    STATUS ON
+    PROJECTION
+    	'init=epsg:4326'
+    END
+ CLASS
+       NAME 'Bars' 
+      STYLE
+         SYMBOL 'CIRCLE' 
+         SIZE 4 
+         OUTLINECOLOR 255 0 0 
+         COLOR 255 0 0
+       END
+    END
+  END 
+  
+    #Circle symbol
+      SYMBOL
+        NAME 'CIRCLE'
+        TYPE ellipse
+        FILLED true
+        POINTS
+          1 1
+        END
+      END 
+  #end of file
+  
+END

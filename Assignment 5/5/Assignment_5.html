@@ -1,0 +1,100 @@
+<html>
+  <title>Assignment_5</title>
+  <!-- Local style sheet relative to workspace folder -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <!--provides a full-width container that can expand or collapse based on the size of viewport-->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 col-sm-12 col-xs-12">
+        <nav id="navbar">
+          <h3>GGE 5403 Assignment_5</h3>
+          <!--content stacking for smaller screens-->
+          <ul class="nav nav-pills nav-stacked">
+            <!--internal linking to the respective sections-->
+            <a class="nav-link" href="#Description" rel="internal">
+              <li>Description</li>
+            </a>
+            <a class="nav-link" href="#History" rel="internal">
+              <li>Gloucester County</li>
+            </a>
+            <a class="nav-link" href="#Map" rel="internal">
+              <li>Map (WMS service)</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-10 col-sm-12 col-xs-12">
+        <main id="main-doc">
+          <section class="main-section" id="Description">
+            <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+            <h3 style="background: black; color: white">Description</h3>
+            <article>
+              <p>The following WMS Service was developed to disseminate the content of the extracted CanVec hydrographic and transportation features of the GeoPackage file for the Gloucester, NB geographic area:</p>
+              <em>
+              <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/gge5403/students/mohammadali/5/Gloucester/Gloucester_wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities" target="_blank">Please click here to see what can this service do?</a>
+            </em>
+            </article>
+          </section>
+          <section class="main-section" id="History">
+            <h3 style="background: black; color: white">Gloucester County</h3>
+            <article>
+              <p>In 1826, Gloucester County was separated from Northumberland County. It is situated in New Brunswick's northeastern corner. The parishes of Saumarez and Beresford in Northumberland County were established in 1814. In 1826, Beresford was merged with Bathurst to form Bathurst. Saumarez gave birth to New Bandon and Caraquet in 1831, Shippagan to Saumarez in 1851, and Inkerman to Saumarez in 1855. Saumarez and Inkerman were combined to form Saint Isidore in 1881. Paquetville was founded in 1897 from Inkerman and Caraquet, and Allardville was founded in 1946 from Bathurst.</p>
+              </artice>
+          </section>
+          <section class="main-section" id="Map">
+            <h3 style="background: black; color: white">Map (WMS service)</h3>
+            <p>This section provides access to the data (shapefiles) via a WMS service using an associated MAP file.</p>
+            <article>
+              <table border="5" width="80%" style="text-align:left;">
+                <th width="30%" style="text-align:center;"> Point features </th>
+                <!-- add image showing preview of all the content-->
+                <td rowspan="11">
+                  <p style="text-align:center;">
+                    <img src="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/gge5403/students/mohammadali/5/Gloucester/Gloucester_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=RoadSegments,RoadJunction,WaterBody,PopulatedPlaces&BBOX=-65.9963,47.33,-65.215,47.9545&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png">
+                  </p>
+                </td>
+                <tr>
+                  <td>
+                    <em>
+                      <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/gge5403/students/mohammadali/5/Gloucester/Gloucester_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=PopulatedPlaces&BBOX=-65.9963,47.33,-65.215,47.9545&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png" target="_blank">Populated Places</a>
+                    </em>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <em>
+                      <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/gge5403/students/mohammadali/5/Gloucester/Gloucester_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=RoadJunction&BBOX=-65.9958,47.3335,-65.2159,47.9206&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png" target="_blank">Road Junction</a>
+                    </em>
+                  </td>
+                </tr>
+                <th style="text-align:center;"> Line Feature </th>
+                <tr>
+                  <td>
+                    <em>
+                      <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/gge5403/students/mohammadali/5/Gloucester/Gloucester_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=RoadSegments&BBOX=-65.9963,47.33,-65.215,47.9206&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png" target="_blank">Road Segments</a>
+                    </em>
+                  </td>
+                </tr>
+                <th style="text-align:center;"> Polygon Feature </th>
+                <tr>
+                  <td>
+                    <em>
+                     <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/gge5403/students/mohammadali/5/Gloucester/Gloucester_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=WaterBody&BBOX=-65.9963,47.33,-65.215,47.9206&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png" target="_blank">Water Body</a>
+                  </em>
+                  </td>
+                </tr>
+                <th>
+                  <h3 style="text-align:center;">
+                    <a href="http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/gge5403/students/mohammadali/5/Gloucester/Gloucester_wms.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=RoadSegments,RoadJunction,WaterBody,PopulatedPlaces&BBOX=-65.9963,47.33,-65.215,47.9545&STYLES=&SRS=EPSG:4326&WIDTH=700&HEIGHT=600&FORMAT=image/png" target="_blank">Select All</a>
+                  </h3>
+                </th>
+                </tr>
+              </table>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+</html>

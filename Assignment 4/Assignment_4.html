@@ -1,0 +1,70 @@
+<html>
+   <title>Assignment_4</title>
+   <!-- Local style sheet relative to workspace folder -->
+   <link rel="stylesheet" href="src/css/style.css">
+   <!--provides a full-width container that can expand or collapse based on the size of viewport-->
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id="navbar">
+               <h3>GGE 5403 Assignment_4</h3>
+               <!--content stacking for smaller screens-->
+               <ul class="nav nav-pills nav-stacked">
+                  <!--internal linking to the respective sections-->
+                  <a class="nav-link" href="#Report" rel="internal">
+                     <li>Report</li>
+                  </a>
+                  <a class="nav-link" href="#WebService" rel="internal">
+                     <li>Web Service</li>
+                  </a>
+               </ul>
+            </nav>
+         </div>
+         <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+               <section class="main-section" id="Report" >
+                  <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                  <h3 style = "background: black; color: white">Report</h3>
+                  <article>
+                     <p>
+                        Click here to download the report PDF file: <a href="./src/pdf/report.pdf">Download file</a> <br/>
+                     </p>
+                     <div id="app">
+                        <iframe
+                          src="https://drive.google.com/file/d/1XoLSm3YcgraecxsNG28NVHvae7Ixh5RK/preview"
+                          width="100%"
+                          height="500px"
+                        >
+                        </iframe>
+                  </article>
+               </section>
+               <section class="main-section" id="WebService">
+                  <h3 style = "background: black; color: white">Web Service</h3>
+                  <article>
+                     <form class="form" name="GeoNames" action="Sqlite.py" method="get">
+                        <h3>Please fill the required values bellow to find the number of road segments with a speed limit in the range [X,Y]:</h3>
+                        <strong>X (required, must be between 0 to 150 and less than Y): </strong><input type="text" name = "minValue" pattern="(|-)?[0-9]{0,3}?" id="min_value" placeholder="50" value="" required/><br/>
+                        <strong>Y (required, must be between 0 to 150 and grater than X): </strong><input type="text" name = "maxValue" pattern="(|-)?[0-9]{0,3}?" id="max_value" placeholder="100" value="" required/><br/>
+                        <button type = "submit" name = "submitcheck" id = "submit_check " onclick="return validate();"> Send </button>
+                        </form>
+                        <script type="text/javascript">
+                        function validate(){
+                           var max = parseInt(document.getElementById('max_value').value);
+                           var min = parseInt(document.getElementById('min_value').value);
+                           if(min > max){
+                                 alert('X is greter than Y, please try again \uD83D\uDE09');
+                                 return false;
+                           }else{
+                                 
+                              return ;
+                           }
+                        }
+                        </script> 
+                  </artice>
+               </section>
+
+            </main>
+         </div>
+      </div>
+   </div>
+</html>

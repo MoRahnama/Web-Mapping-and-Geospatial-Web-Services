@@ -1,0 +1,77 @@
+<html>
+   <title>Assignment_3</title>
+   <!-- Local style sheet relative to workspace folder -->
+   <link rel="stylesheet" href="src/css/style.css">
+   <!--provides a full-width container that can expand or collapse based on the size of viewport-->
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id="navbar">
+               <h3>GGE 5403 Assignment_3</h3>
+               <!--content stacking for smaller screens-->
+               <ul class="nav nav-pills nav-stacked">
+                  <!--internal linking to the respective sections-->
+                  <a class="nav-link" href="#Service1" rel="internal">
+                     <li>Service 1</li>
+                  </a>
+                  <a class="nav-link" href="#Service2" rel="internal">
+                     <li>Service 2</li>
+                  </a>
+               </ul>
+            </nav>
+         </div>
+         <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+               <section class="main-section" id="Service1" >
+                  <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                  <h3 style = "background: black; color: white">Service 1</h3>
+                  <article>
+                     <p><strong>GeoNames Service: </strong> Find nearby populated place / reverse geocoding <br/>
+                        <strong>Webservice Type: </strong>REST.<br/>
+                        <strong>URL: </strong>api.geonames.org/findNearbyPlaceName?<br/>
+                        <strong>Parameters: </strong>lat, lng.<br/>
+                        <strong>Lang: </strong>language of returned 'name' element (the pseudo language code 'local' will return it in local language).<br/>
+                        <strong>Radius: </strong>radius in km (optional).<br/>
+                        <strong>MaxRows: </strong>max number of rows (default 10).<br/>
+                        <strong>Style: </strong>SHORT, MEDIUM, LONG, FULL (default = MEDIUM), verbosity of returned xml document.<br/>
+                        <strong>LocalCountry: </strong>in border areas this parameter will restrict the search on the local country, value=true.<br/>
+                        <strong>Cities: </strong>optional filter parameter with three possible values 'cities1000', 'cities5000','cities15000'.<br/>
+                        <strong>Result: </strong>returns the closest populated place (feature class=P) for the lat/lng query as xml document. The unit of the distance element is 'km'.<br/>
+                        <strong>Example: </strong>http://api.geonames.org/findNearbyPlaceName?lat=47.3&lng=9&username=demo<br/>
+                     </p>
+                        <form class="form" name="GeoNames" action="GeoNames.py" method="get">
+                           <h3>Please fill the required values bellow:</h3>
+                           <strong>Latitude (required -90 to 90): </strong><input type="number" min="-90" max="90" step="0.1" name="Latitude" placeholder="12.34" required><br/>
+                           <strong>Longitude (required -180 to 180): </strong><input type="number" min="-180" max="180" step="0.1" name="Longitude" placeholder="12.34" required><br/>
+                           <strong>MaxRows (1-10): </strong><input type="number" name="MaxRows" min="0" max="10" step="1" placeholder="10"><br/>
+                           <strong>Radius (1-300): </strong><input type="number" name="Radius" min="0" max="300" step="1" placeholder="100"><br/>
+                           <strong>Cities: </strong>
+                           <label><input type=radio name=Cities value="cities1000"> 1000 </label>
+                           <label><input type=radio name=Cities value="cities5000"> 5000 </label>
+                           <label><input type=radio name=Cities value="cities15000"> 15000 </label><br/>
+                           <strong>LocalCountry: </strong><input type="checkbox" name="LocalCountry" value="true"/><br/>
+                           <strong>Language: </strong><label><input type=radio checked="true" name=Lang required value="9"> English </label><br/>
+                           <strong>Style: </strong><select name="Style">
+                              <option  value="SHORT"> Short</option>
+                              <option  value="MEDIUM" selected> Medium</option>
+                              <option  value="LONG"> Long</option>
+                              <option  value="FULL"> Full</option></select><br/>
+                           <input type="submit" value="Submit">
+                           </form>  
+                  </article>
+               </section>
+               <section class="main-section" id="Service2">
+                  <h3 style = "background: black; color: white">Service 2</h3>
+                  <article>
+                     <form class="form" enctype="multipart/form-data" name="File" action="File.py" method="post">
+                        <h3>Please upload a CSV file with the following format:<br/>[PlaceName, Longitude, Latitude]. </h3>
+                        <p>CSV file: <input type="file" name="fileToUpload" /></p>
+                        <p><input type="submit" value="Upload" /></p>
+                        </form> 
+                  </artice>
+               </section>
+            </main>
+         </div>
+      </div>
+   </div>
+</html>

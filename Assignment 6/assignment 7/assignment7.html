@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+      <title>New Brunswick Fredericton OpenLayer and WMS</title> 
+    <link rel="stylesheet" href="http://openlayers.org/dev/theme/default/style.css" type="text/css">
+    <link rel="stylesheet" href="http://openlayers.org/dev/examples/style.css" type="text/css">
+      
+      <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false"></script>
+      <script src="http://openlayers.org/api/OpenLayers.js"></script>
+      
+<!-- Google has recently changed its policy and requires a key - use the same one for your app on gaia -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH6mRLTmgq_o8GDA3XWPkli9RN5pnjbwA" ></script>
+      
+      <script defer="defer" type="text/javascript">
+        
+        var map;
+        	var options = { 
+			    numZoomLevels:18,
+                            projection: "EPSG:3857",
+		            displayProjection: "EPSG:4326",			    
+			    controls: [new OpenLayers.Control.PanZoom() ] 
+                          };
+
+        function init() {
+                
+  	        map = new OpenLayers.Map('map', options);
+                map.addControl(new OpenLayers.Control.Navigation());
+                map.addControl(new OpenLayers.Control.LayerSwitcher({'div':OpenLayers.Util.getElement('layerswitcher')}));
+        	
+        	var google_sat = new OpenLayers.Layer.Google("Google Satellite", {type: google.maps.MapTypeId.SATELLITE});
+        	var google_map = new OpenLayers.Layer.Google("Google Map");
+        	var osm = new OpenLayers.Layer.OSM("Open Street Map");
+    
+        	
+		var transport = new OpenLayers.Layer.WMS( "Transport", 
+                "http://gaia.gge.unb.ca/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/students/nasrin/assignment7/newBrunswick_wms.map",
+                {layers: "transport", 'transparent': 'true'}, {'isBaseLayer': false}, {'reproject': true}); 
+
+		var waterways = new OpenLayers.Layer.WMS( "Water ways", 
+                "http://gaia.gge.unb.ca/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/students/nasrin/assignment7/newBrunswick_wms.map",
+                {layers: "waterways", 'transparent': 'true'}, {'isBaseLayer': false}, {'reproject': true}); 
+				
+		var buildings = new OpenLayers.Layer.WMS( "Buildings", 
+                "http://gaia.gge.unb.ca/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/wmaps/students/nasrin/assignment7/newBrunswick_wms.map",
+                {layers: "buildings", 'transparent': 'true'}, {'isBaseLayer': false}, {'reproject': true});		
+
+        	map.addLayers([google_sat, google_map, osm, transport, waterways,buildings]);
+        
+        	map.setCenter(new OpenLayers.LonLat(-66.65, 45.100).transform ("EPSG:4326", "EPSG:3857"), 6); 
+
+		transport.setVisibility(false);
+		waterways.setVisibility(false);
+		buildings.setVisibility(false);
+	
+	}
+      </script>  
+	<style type="text/css">
+.auto-style1 {
+	background-color: #008000;
+}
+.auto-style2 {
+	color: #008080;
+	margin-left: 320px;
+}
+</style>
+  </head>
+  <body onload="init()">
+        <h1 align="center" class="auto-style1">New Brunswick Fredericton OpenLayer and WMS</h1> 
+	<p class="auto-style2"><font size=4>This Web Client Application was developed using OpenLayers JavaScript and WMS</font></p><br>
+
+        <div id="layerswitcher" class="olControlLayerSwitcher" style="position:absolute; top:450px; left:1150px; color : pink"></div>
+	<div id="map" style="width: 1000px; height: 700px; border: 3px green; position:absolute; top:120px; left:150px"></div>
+  </body>
+</html>

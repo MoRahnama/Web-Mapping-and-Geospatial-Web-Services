@@ -1,0 +1,50 @@
+Dear Mohammadali,
+
+
+Welcome to GGE5403: Web Mapping and Geospatial Web. I hope that this course will be a nice learning experience for you. Please do not hesitate to contact me, if you need any assistance or clarification over the next few months. 
+
+Visit the course platform on Desire2Learn (through http://my.unb.ca) to find the course material. 
+
+Make sure to read the documents under ‘Course Information’section carefully before you proceed to Module 1. 
+
+Your space on the course server is located here: 
+
+http://gaia.gge.unb.ca:8080/gge5403/students/mohammadali
+
+Your credentials to access the course server are: 
+
+login:  mohammadali
+
+password:  m0206
+
+Below is the customized information associated with your account. This information will be required in some of your assignments for this course: 
+
+Assignment 1: 
+
+Your geographic area is: Gloucester in New Brunswick, North-East  
+
+
+
+
+Assignment 3: 
+
+Service1: your GeoNames service is:   
+
+https://www.geonames.org/export/web-services.html#findNearbyPlaceName  
+
+Service 2: [Operation] “compute and report the Centroid of the populated places in Web Mercator projection (i.e., (Xmax - Xmin)/2, (Ymax - Ymin)/2 )”  
+
+Assignment 4: 
+
+The Query is: “Find the number of road segments with a speed limit in the range [X,Y]”; X and Y are the input values in the form.  
+
+I wish you good luck and looking forward to providing you with assistance whenever needed. 
+
+Emmanuel 
+
+-- 
+
+Emmanuel Stefanakis 
+
+GGE5403 Instructor 
+

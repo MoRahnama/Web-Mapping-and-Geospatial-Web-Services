@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Assignment_2b</name>
+	<description>GGE 5403 Assignment_2</description>
+	<Folder id="07137A5F78202C156C2E">
+		<name>Gloucester County</name>
+		<open>1</open>
+		<description><![CDATA[<div>Gloucester County is located in the northeastern corner of New Brunswick, Canada, with a population of 78,444. The county's main industries are fishing, mining, and forestry. <br></div><div><br></div>]]></description>
+		<LookAt>
+			<longitude>-65.10369900000001</longitude>
+			<latitude>47.7113165</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>180274.1545</range>
+		</LookAt>
+		<styleUrl>#__managed_style_03CF642405202C1871AA</styleUrl>
+	</Folder>
+	<Placemark id="0030294DA0202BDAAE00">
+		<name>Bathurst City</name>
+		<description><![CDATA[<div><a href="https://goo.gl/maps/8otVu88zXGfkpxut5">View on Google Map</a><br></div>]]></description>
+		<gx:mid>/m/016ygd</gx:mid>
+		<gx:fid>0x4c98941b3ad5d61d:0x505c13c653ce030</gx:fid>
+		<LookAt>
+			<longitude>-65.62819255000001</longitude>
+			<latitude>47.62596054999999</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>31335.47368224441</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_05971C37DA202C1871AB</styleUrl>
+		<gx:Carousel>
+		</gx:Carousel>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-65.6513358,47.61835070000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09846D7A83202BE3574C">
+		<name>Beresford Town</name>
+		<description><![CDATA[<div><a href="https://goo.gl/maps/7QUWPKwYC9SxHTds5">View on Google Map</a><br></div>]]></description>
+		<gx:mid>/m/06k1wn</gx:mid>
+		<gx:fid>0x4c988b07218dbac1:0xe52b872eb007a5dd</gx:fid>
+		<LookAt>
+			<longitude>-65.6962308</longitude>
+			<latitude>47.71109895</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>15642.19995344922</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3E50DFD8CF202C1871AB</styleUrl>
+		<gx:Carousel>
+		</gx:Carousel>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-65.70071759999999,47.701474,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="05E6896635202BE6ED60">
+		<name>Shippagan Town</name>
+		<description><![CDATA[<div><a href="https://goo.gl/maps/57wHV4HD9vqTTpQS9">View on Google Map</a><br></div>]]></description>
+		<gx:mid>/m/06wk1x</gx:mid>
+		<gx:fid>0x4c9f294caa40f417:0xccc216ce85154f6</gx:fid>
+		<LookAt>
+			<longitude>-64.7229565</longitude>
+			<latitude>47.7397131</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>7816.804753916261</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_21DCF676DC202C1871AC</styleUrl>
+		<gx:Carousel>
+		</gx:Carousel>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-64.70569279999999,47.74392839999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="05A7DDF76E202BE8C766">
+		<name>Petit-Rocher Village</name>
+		<description><![CDATA[<div><a href="https://goo.gl/maps/h7Dmft5zvgLpuxCr5">View on Google Map</a><br></div>]]></description>
+		<gx:mid>/m/06wkwm</gx:mid>
+		<gx:fid>0x4c98f3b806c3918d:0x92ec56d0d5ca37a0</gx:fid>
+		<LookAt>
+			<longitude>-65.72315435</longitude>
+			<latitude>47.78465045</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>7810.05534784562</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_06BBBCEF15202C1871AD</styleUrl>
+		<gx:Carousel>
+		</gx:Carousel>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-65.719407,47.7839095,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01E905B272202BEA7070">
+		<name>Belledune Village</name>
+		<description><![CDATA[<div><a href="https://goo.gl/maps/hM6VGMMANknHpEnp6">View on Google Map</a><br></div>]]></description>
+		<gx:mid>/m/0bq3wg</gx:mid>
+		<gx:fid>0x4c985bc5ce1896df:0xbf841944ab742f8a</gx:fid>
+		<LookAt>
+			<longitude>-65.92776305000001</longitude>
+			<latitude>47.9148845</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>62323.74083243033</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AF5F05767202C1871AD</styleUrl>
+		<gx:Carousel>
+		</gx:Carousel>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-65.81147779999999,47.88594889999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0EA62B6FAF202BEBD3B1">
+		<name>Bas-Caraquet Village</name>
+		<description><![CDATA[<div><a href="https://goo.gl/maps/RwaZXX3dTRFtwM1H6">View on Google Map</a><br></div>]]></description>
+		<gx:mid>/m/0bpxkg</gx:mid>
+		<gx:fid>0x4c9f2b33bb606c53:0x7da1bb83da4b04b3</gx:fid>
+		<LookAt>
+			<longitude>-64.8310934</longitude>
+			<latitude>47.78315349999999</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>15620.56052197221</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_023C1A8113202C1871AE</styleUrl>
+		<gx:Carousel>
+		</gx:Carousel>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-64.83199139999999,47.8006213,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0AC0402A60202BED2EC1">
+		<name>Lameque Village</name>
+		<description><![CDATA[<div><a href="https://goo.gl/maps/noiaXMFMD7XHDeyf7">View on Google Map</a><br></div>]]></description>
+		<gx:mid>/m/0bzqd2</gx:mid>
+		<gx:fid>0x4c9f284ba4893cdd:0x841629e222650d20</gx:fid>
+		<LookAt>
+			<longitude>-64.6236565</longitude>
+			<latitude>47.81091644999999</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>15612.21615431994</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0F39A13F13202C1871AF</styleUrl>
+		<gx:Carousel>
+		</gx:Carousel>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-64.6478984,47.7934207,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0B4A3B257F202BEEC845">
+		<name>Saint-Leolin Village</name>
+		<description><![CDATA[<div><a href="https://goo.gl/maps/d8GXbARfcNEDwPqUA">View on Google Map</a><br></div>]]></description>
+		<gx:mid>/m/0c2b_d</gx:mid>
+		<gx:fid>0x4c98c537b27a70a5:0xa0bbe4f4168a7a95</gx:fid>
+		<LookAt>
+			<longitude>-65.17945085000001</longitude>
+			<latitude>47.7687332</latitude>
+			<altitude>0</altitude>
+			<heading>-11.650934</heading>
+			<tilt>47.6770541</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>7812.446603343335</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_335BA17096202C1871AF</styleUrl>
+		<gx:Carousel>
+		</gx:Carousel>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-65.1733548,47.77009850000001,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

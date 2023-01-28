@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Quick Start - Leaflet</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+<h1>LeafLet - Layers</h1>
+
+<! defive the size of the map (div) ->
+<div id="mapid" style="width: 600px; height: 400px;"></div>
+<script>
+
+    var pts = new L.LayerGroup();
+	
+	// add a marker
+	L.marker([45.95, -66.67]).addTo(pts);
+	L.marker([45.96, -66.66]).addTo(pts);
+
+	// define osm layer  
+	var osmmap = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	});
+		
+	var mymap = L.map('mapid', {
+		center: [45.95, -66.67],
+		zoom: 13,
+		layers: [osmmap]
+	});
+
+	var baseLayers = {
+		"OSM": osmmap
+	};
+
+	var overlays = {
+		"Markers": pts
+	};
+
+	L.control.layers(baseLayers, overlays).addTo(mymap);
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+  <title>Assignment_6</title><meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@2.0.4"></script>
+  <!-- Local style sheet relative to workspace folder -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!--provides a full-width container that can expand or collapse based on the size of viewport-->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 col-sm-12 col-xs-12">
+        <nav id="navbar">
+          <h3>GGE 5403 Assignment_6</h3>
+          <!--content stacking for smaller screens-->
+          <ul class="nav nav-pills nav-stacked">
+            <!--internal linking to the respective sections-->
+            <a class="nav-link" href="#Description" rel="internal">
+              <li>Description</li>
+            </a>
+            <a class="nav-link" href="#History" rel="internal">
+              <li>Gloucester County</li>
+            </a>
+            <a class="nav-link" href="#Map" rel="internal">
+              <li>Map (LeafLet JS)</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-10 col-sm-12 col-xs-12">
+        <main id="main-doc">
+          <section class="main-section" id="Description">
+            <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+            <h3 style="background: black; color: white">Description</h3>
+            <article>
+              <p>The following thin Web Client application was developed using the LeafLet JavaScript Library. The application provides a menu with a set of buttons to combine the WMS layers of the extracted CanVec hydrographic and transportation features of the GeoPackage file for the Gloucester, NB geographic area with base maps from various Earth Browsers (OpenStreetMap, Esri, Topographic).</p>
+            </article>
+          </section>
+          <section class="main-section" id="History">
+            <h3 style="background: black; color: white">Gloucester County</h3>
+            <article>
+              <p>In 1826, Gloucester County was separated from Northumberland County. It is situated in New Brunswick's northeastern corner. The parishes of Saumarez and Beresford in Northumberland County were established in 1814. In 1826, Beresford was merged with Bathurst to form Bathurst. Saumarez gave birth to New Bandon and Caraquet in 1831, Shippagan to Saumarez in 1851, and Inkerman to Saumarez in 1855. Saumarez and Inkerman were combined to form Saint Isidore in 1881. Paquetville was founded in 1897 from Inkerman and Caraquet, and Allardville was founded in 1946 from Bathurst.</p>
+              </artice>
+          </section>
+          <section class="main-section" id="Map">
+            <h3 style="background: black; color: white">Map (LeafLet JS)</h3>
+            <article>
+              <div id="mapid" style="width: 1000px; height: 800px;"></div>
+              <script src="http://gaia.gge.unb.ca:8080/gge5403/students/mohammadali/6/src/JS/Map.js"></script>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+</html>

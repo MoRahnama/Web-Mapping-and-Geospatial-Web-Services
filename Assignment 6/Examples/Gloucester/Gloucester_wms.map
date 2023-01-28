@@ -1,0 +1,114 @@
+MAP
+
+NAME Fredericton_wms		
+STATUS ON
+SIZE 800 800
+EXTENT -65.9963 47.33 -65.215 47.9545
+UNITS DD
+IMAGECOLOR 250 250 250
+
+PROJECTION
+	"init=epsg:4617"
+END
+
+WEB
+	IMAGEPATH "C:\ms4w\Apache\htdocs\tmp"
+	IMAGEURL "/tmp/"
+	METADATA 
+		"wms_title" "WMS Server (GeoPackage Example)"
+		"wms_onlineresource" "http://gaia.gge.unb.ca:8080/cgi-bin/mapserv.exe?map=/ms4w/Apache/htdocs/gge5403/students/mohammadali/6/Gloucester/Gloucester_wms.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
+		"wms_srs" "EPSG:4617 EPSG:3857" 
+		"ows_enable_request" "*"
+		END
+END
+
+  #-------- 
+   LAYER
+    NAME "RoadSegments"
+    TYPE LINE
+
+    CONNECTIONTYPE OGR
+    CONNECTION "C:/ms4w/Apache/htdocs/gge5403/students/mohammadali/6/Gloucester/canvec_220313_332517.gpkg"
+    DATA "road_segment_1"
+    METADATA
+      'wms_title' 'RoadSegments'
+    END
+    STATUS ON
+    PROJECTION
+    	'init=epsg:4617'
+    END
+  CLASS
+       NAME 'RoadSegments' 
+       STYLE
+         SYMBOL 0 
+         SIZE 3 
+        COLOR 146 146 146
+       END
+    END
+  END
+
+  #-------- 
+   LAYER
+    NAME "RoadJunction"
+    TYPE POINT
+
+    CONNECTIONTYPE OGR
+    CONNECTION "C:/ms4w/Apache/htdocs/gge5403/students/mohammadali/6/Gloucester/canvec_220313_332517.gpkg"
+    DATA "road_junction_0"
+    METADATA
+      'wms_title' 'RoadJunction'
+    END
+    STATUS ON
+    PROJECTION
+    	'init=epsg:4617'
+    END
+  CLASS
+       NAME 'RoadJunction' 
+       STYLE
+         SYMBOL 'CIRCLE' 
+         SIZE 4 
+         OUTLINECOLOR 255 170 0
+         COLOR 255 170 0
+       END
+    END
+  END
+
+#Circle symbol
+      SYMBOL
+        NAME 'CIRCLE'
+        TYPE ellipse
+        FILLED true
+        POINTS
+          1 1
+        END
+      END
+
+  #-------- 
+   LAYER
+    NAME "WaterBody"
+    TYPE LINE
+
+    CONNECTIONTYPE OGR
+    CONNECTION "C:/ms4w/Apache/htdocs/gge5403/students/mohammadali/6/Gloucester/canvec_220313_332517.gpkg"
+    DATA "waterbody_2"
+    METADATA
+      'wms_title' 'WaterBody'
+    END
+    STATUS ON
+    PROJECTION
+    	'init=epsg:4617'
+    END
+  CLASS
+       NAME 'Water' 
+       STYLE
+         SYMBOL 0 
+         SIZE 2 
+         OUTLINECOLOR 0 0 0
+         COLOR 0 75 175
+       END
+    END
+  END 
+
+END
+  
+ 

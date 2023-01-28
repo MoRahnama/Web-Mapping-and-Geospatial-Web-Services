@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Quick Start - Leaflet</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	
+	<script src="./Leaflet.Geodesic-master/Leaflet.Geodesic.js"></script>
+
+</head>
+<body>
+
+<h1>LeafLet - OSM + Geodesic Line </h1>
+
+<! defive the size of the map (div) ->
+<div id="mapid" style="width: 600px; height: 400px;"></div>
+<script>
+
+    //Define the map (mymap)
+	var mymap = L.map('mapid').setView([0, 0], 1);
+
+	// define the layer and add it into the map (mymap) 
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(mymap);
+	
+    // define an empty geodesic object
+	var Geodesic = L.geodesic([], {
+		weight: 7, 
+		opacity: 0.5,
+		color: 'blue',
+		steps: 50
+	}).addTo(mymap);
+
+	var berlin = new L.LatLng(52.5, 13.35); 
+	var losangeles = new L.LatLng(33.82, -118.38);
+	var capetown = new L.LatLng(-33.91, 18.41);
+	Geodesic.setLatLngs([[berlin, losangeles, capetown]]);
+	
+</script>
+
+</body>
+</html>
